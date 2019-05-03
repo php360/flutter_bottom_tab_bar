@@ -374,15 +374,16 @@ class _BottomNavigationTile extends StatelessWidget {
       return item.badge;
     }
     return Container(
-      width: 24,
-      padding: EdgeInsets.fromLTRB(0, 2, 0, 2),
+      // width: 24,
+      padding: EdgeInsets.all(4.0),
+      margin: EdgeInsets.only(right: 5.0),
       alignment: Alignment.center,
       decoration: BoxDecoration(
           color: badgeColor,
           shape: BoxShape.rectangle,
           borderRadius: BorderRadius.all(Radius.circular(10))),
       child: Text(
-        '99+',
+        item.badgeNo,
         style: TextStyle(fontSize: 10, color: Colors.white),
       ),
     );
