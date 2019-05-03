@@ -374,9 +374,11 @@ class _BottomNavigationTile extends StatelessWidget {
       return item.badge;
     }
     return Container(
-      // width: 24,
       padding: EdgeInsets.all(4.0),
       margin: EdgeInsets.only(right: 5.0),
+      constraints: BoxConstraints(
+        minWidth: 18
+      ),
       alignment: Alignment.center,
       decoration: BoxDecoration(
           color: badgeColor,
